@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CHAT</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/top2.css">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+</head>
+<body>
+	<!-- Where all the magic happens -->
+	<!-- LOGIN FORM -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fulid">
+			<!-- 2.ヘッダ情報 -->
+			<div class="navbar-header">
+				<a class="navbar-brand"><div class="logo" style="padding:0px 0">CHAT SYSTEM</div></a>
+			</div>
+		</div>
+	</nav>
+	<center>
+		<div class="text-center" style="padding:30px 0">
+			<div class="logo">login</div>
+			<!-- Main Form -->
+			<div class="login-form-1">
+				<form id="login-form" class="text-left" action="login.php" method="post" autocomplete="off">
+					<div class="login-form-main-message"></div>
+					<div class="main-login-form">
+						<div class="login-group">
+							<div class="form-group">
+								<div align="left">
+									<label for="lg_username" class="sr-only"></label>
+									<input type="text" class="form-control" id="lg_username" name="userid" placeholder="username">
+								</div>
+							</div>
+							<div class="form-group">
+								<div align="left">
+									<label for="lg_password" class="sr-only"></label>
+									<input type="password" class="form-control" id="lg_password" name="pass" placeholder="password">
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+					</div>
+				</form>
+			</div>
+			<!-- end:Main Form -->
+		</div>
+	</center>
+	<center>
+		<!-- REGISTRATION FORM -->
+		<div class="text-center" style="/*padding:30px 0*/">
+			<div class="logo">register</div>
+			<!-- Main Form -->
+			<div class="login-form-1">
+				<form id="register-form" class="text-left" action="createuser.php" method="post">
+					<div class="login-form-main-message"></div>
+					<div class="main-login-form">
+						<div class="login-group">
+							<div class="form-group">
+								<div align="left">
+									<label for="reg_username" class="sr-only"></label>
+									<input type="text" class="form-control" id="reg_username" name="userid" placeholder="username" autocomplete="off">
+								</div>
+							</div>
+							<div class="form-group">
+								<div align="left">
+									<label for="reg_password" class="sr-only"></label>
+									<input type="password" class="form-control" id="reg_password" name="pass" placeholder="password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div align="left">
+									<label for="reg_password" class="sr-only"></label>
+									<input type="password" class="form-control" id="reg_password" name="confirmpass" placeholder="confirmpass">
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+					</div>
+				</form>
+			</div>
+			<!-- end:Main Form -->
+		</div>
+		<div class="logo" style="padding:20px 0"><span data-toggle="tooltip" data-placement="bottom" data-html="true" title="下のフォームからユーザ登録を行い上のフォームからログインしてチャットを始めてください!!">Hints</span></div>
+	</center>
+		<div id="footerArea">
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Back to the top page <a href="./3.html">click here.</a></p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
